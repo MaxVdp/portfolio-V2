@@ -1,12 +1,16 @@
-import Image from "next/image";
+import { Experience } from "@/components/experience";
+import { MainInfo } from "@/components/mainInfo";
 
 export default function Home() {
   return (
-    <div className="bg-red-300 w-full flex justify-center items-center px-4">
-      <div className="flex flex-col items-center">
-        <h1 className="text-4xl font-bold">Welcome to my Next.js TailwindCSS Starter</h1>
-        <Image src="/logo.svg" width={200} height={200} alt="logo" />
-      </div>
+    
+    <div className="flex flex-col gap-16 px-4">
+      
+      <MainInfo />
+      <Experience />
+      <h1 className="text-4xl font-bold">hello Max here! portfolio v2</h1>
+      <p>hier komt korte intro + foto + snelle links naar linkedin, email cv etc, werk + school section, klein aantal projectjes, footer</p>
     </div>
+    
   );
 }

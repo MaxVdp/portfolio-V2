@@ -1,18 +1,16 @@
 import { ModeToggle } from "@/components/navbar/themeSwitcher"
 
-{/* <ModeToggle /> */}
-
-
 
 export function Navbar(){
     return (
-        <nav className="flex justify-between items-center py-4">
-        <div className="flex space-x-4">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div className="text-2xl font-bold">Max Vdp</div>
+        <nav className="flex justify-between items-center py-8 px-4">
+            <div className="flex space-x-4 gap-4 text-[#71717a] dark:text-[#a1a1aa] font-medium">
+                <a href="/">home</a>
+                <a href="/projects">projects</a>
+                <a href="">about</a>
+                <a href="">contact</a>
+            </div>
+            <ModeToggle />
         </nav>
     );
 }
