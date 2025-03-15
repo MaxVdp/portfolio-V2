@@ -1,3 +1,4 @@
+"use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
     Card,
@@ -9,11 +10,10 @@ import {
   } from "@/components/ui/card"
   import { Input } from "@/components/ui/input"
   import { Label } from "@/components/ui/label"
-  import { Button } from "@/components/ui/button"
 
 export function Experience() {
   return (
-    <Tabs defaultValue="account" className="w-full">
+    <Tabs defaultValue="Experience" className="">
       <TabsList className="grid w-full grid-cols-2">
         <TabsTrigger value="Experience">Experience</TabsTrigger>
         <TabsTrigger value="Education">Education</TabsTrigger>
@@ -37,7 +37,7 @@ export function Experience() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button>Save changes</Button>
+            save
           </CardFooter>
         </Card>
       </TabsContent>
@@ -60,7 +60,7 @@ export function Experience() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button>Save password</Button>
+            save
           </CardFooter>
         </Card>
       </TabsContent>

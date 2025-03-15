@@ -1,3 +1,4 @@
+"use client"
 import { ModeToggle } from "@/components/navbar/themeSwitcher"
 
 
