@@ -26,11 +26,11 @@ export function MainInfo() {
         className="rounded-xl"
       />
       
-      <div className="flex flex-col gap-4 ">
+      <div className="flex flex-col gap-4">
         <h1 className="text-4xl font-bold">hey, Max here!</h1>
-        <p className="">I'm a {getAge()} year old software developer from Belgium</p>
+        <p className="">I'm a {getAge()} year old software developer from Belgium.</p>
         <p className="">I like to develop websites, do bouldering and calisthenics, play the guitar and run around the table with my dog.</p>
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-6 items-center">
           <DropdownMenu>
             <DropdownMenuTrigger>
               <a href="">
