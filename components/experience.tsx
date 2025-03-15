@@ -2,14 +2,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import {
     Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
+    CardContent
   } from "@/components/ui/card"
-  import { Input } from "@/components/ui/input"
-  import { Label } from "@/components/ui/label"
+  import Image from "next/image";
 
 export function Experience() {
   return (
@@ -20,48 +15,76 @@ export function Experience() {
       </TabsList>
       <TabsContent value="Experience">
         <Card>
-          <CardHeader>
-            <CardTitle>Experience</CardTitle>
-            <CardDescription>
-              Make changes to your account here. Click save when you're done.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" defaultValue="Pedro Duarte" />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="username">Username</Label>
-              <Input id="username" defaultValue="@peduarte" />
-            </div>
+        <CardContent className="p-0">
+            <ul className="ml-12 border-l">
+              <li className="relative ml-12 py-4">
+                <a className="absolute -left-[78px] top-6 flex justify-center items-center" href="https://www.leuven2030.be/" target="_blank">
+                  <span className="relative flex shrink-0 overflow-hidden rounded-full size-14 border">
+                    <Image
+                        src="/leuven2030.png"
+                        alt="UCLL College"
+                        width={90}
+                        height={90}
+                        className="aspect-square h-full w-full bg-background object-contain bg-white"
+                      />
+                  </span>
+                </a>
+                <div className="flex flex-col flex-1 justify-start gap-2">
+                  <time className="text-sm text-[#71717a] dark:text-[#a1a1aa]">Dec 2024 - Jan 2025</time>
+                  <h2 className="font-medium leading-none">Leuven 2030</h2>
+                  <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">Full Stack Web Developer & Product Owner (Bachelor's Thesis)</p>
+                  <p>We built on an existing React.js web application, EcoFoodMap. We built an admin dashboard for data management and optimized recurring tasks throughout the web application.</p>
+                </div>
+              </li>
+              <li className="relative ml-12 py-4">
+                <a className="absolute -left-[78px] top-6 flex justify-center items-center" href="https://www.imec.be/" target="_blank">
+                  <span className="relative flex shrink-0 overflow-hidden rounded-full size-14 border">
+                    <Image
+                        src="/logoimec.png"
+                        alt="UCLL College"
+                        width={90}
+                        height={90}
+                        className="aspect-square h-full w-full bg-background object-contain bg-white"
+                      />
+                  </span>
+                </a>
+                <div className="flex flex-col flex-1 justify-start gap-2">
+                  <time className="text-sm text-[#71717a] dark:text-[#a1a1aa]">Sep 2024 - Dec 2024</time>
+                  <h2 className="font-medium leading-none">imec</h2>
+                  <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">Full Stack Web Developer (Internship)</p>
+                  <p>I built on an existing Next.js web application to optimize network management, focusing on refining the UI/UX and adding new features. I also contributed to the backend by developing new APIs to expand system capabilities.</p>
+                </div>
+              </li>
+            </ul>
           </CardContent>
-          <CardFooter>
-            save
-          </CardFooter>
         </Card>
       </TabsContent>
       <TabsContent value="Education">
         <Card>
-          <CardHeader>
-            <CardTitle>Password</CardTitle>
-            <CardDescription>
-              Change your password here. After saving, you'll be logged out.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <div className="space-y-1">
-              <Label htmlFor="current">Current password</Label>
-              <Input id="current" type="password" />
-            </div>
-            <div className="space-y-1">
-              <Label htmlFor="new">New password</Label>
-              <Input id="new" type="password" />
-            </div>
+          <CardContent className="p-0">
+            <ul className="ml-12 border-l">
+              <li className="relative ml-12 py-4">
+                <a className="absolute -left-[78px] top-6 flex justify-center items-center" href="https://www.ucll.be/en" target="_blank">
+                  <span className="relative flex shrink-0 overflow-hidden rounded-full size-14 border">
+                    <Image
+                        src="/logoUCLL.png"
+                        alt="UCLL College"
+                        width={90}
+                        height={90}
+                        className="aspect-square h-full w-full bg-background object-contain"
+                      />
+                  </span>
+                </a>
+                <div className="flex flex-col flex-1 justify-start gap-2">
+                  <time className="text-sm text-[#71717a] dark:text-[#a1a1aa]">2021 - 2025</time>
+                  <h2 className="font-medium leading-none">UC Leuven Limburg</h2>
+                  <p className="text-sm text-[#71717a] dark:text-[#a1a1aa]">Bachelor's Degree Applied Informatics</p>
+                  <p>I pursued the knowledge that a Applied Informatics degree had to offer. I learned about web development, databases and a variaty of programming languages.</p>
+                </div>
+              </li>
+              
+            </ul>
           </CardContent>
-          <CardFooter>
-            save
-          </CardFooter>
         </Card>
       </TabsContent>
     </Tabs>

@@ -20,10 +20,10 @@ export function MainInfo() {
     <div className="w-full flex gap-4 flex-col md:justify-between md:items-center md:flex-row-reverse">
       <Image
         src="/max.jpg"
-        alt="Picture of the author"
+        alt="Picture of me, Max Vdp"
         width={200}
         height={200}
-        className="rounded-lg"
+        className="rounded-xl"
       />
       
       <div className="flex flex-col gap-4 ">
